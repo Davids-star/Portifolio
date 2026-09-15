@@ -336,15 +336,15 @@ onUnmounted(() => {
             <p class="featured-kicker">— Meus Sites</p>
             <h2 id="featured-title">Projetos <strong>Features</strong></h2>
           </div>
-          <a href="#" class="all-projects-link">
+          <router-link to="/503" class="all-projects-link">
             <span>Ver todos os projetos</span>
             <AppIcon name="arrow-right" :size="16" />
-          </a>
+          </router-link>
         </div>
 
         <div class="featured-list">
           <!-- Projeto Destaque 1: Sistema de Gestão à vista -->
-          <a href="#" class="featured-card">
+          <router-link to="/503" class="featured-card">
             <span class="external-link" aria-hidden="true">
               <AppIcon name="external-link" :size="18" />
             </span>
@@ -352,7 +352,7 @@ onUnmounted(() => {
             <h3>Sistema de Gestão à vista</h3>
             <p>Sistema industrial para empresas de pequeno porte com foco em otimização de processos e monitoramento em tempo
               real.</p>
-          </a>
+          </router-link>
 
           <!-- Projeto Destaque 2: Agenda de comissão -->
           <a href="https://comiss-o-lemon.vercel.app/" class="featured-card">
