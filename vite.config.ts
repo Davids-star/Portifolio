@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Portifolio/',
+  base: process.env.VERCEL ? '/' : '/Portifolio/',
   plugins: [
     vue(),
     vueDevTools(),
