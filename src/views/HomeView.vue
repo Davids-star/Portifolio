@@ -175,16 +175,16 @@ onUnmounted(() => {
       <section id="sobre" class="intro-panel" aria-labelledby="intro-title">
         <!-- Coluna de Redes Sociais à esquerda -->
         <aside class="social-links" aria-label="Redes sociais">
-          <a href="#" aria-label="WhatsApp" class="social-link" title="WhatsApp">
+          <a href="https://wa.me/5588981689700" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link" title="WhatsApp">
             <AppIcon name="whatsapp" :size="22" />
           </a>
-          <a href="#" aria-label="Instagram" class="social-link" title="Instagram">
+          <a href="https://www.instagram.com/fxz_davids?stkn=cjBrazY4aHZ5YTdo" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link" title="Instagram">
             <AppIcon name="instagram" :size="22" />
           </a>
-          <a href="#" aria-label="LinkedIn" class="social-link" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/felipe-davids-0a3a223a3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link" title="LinkedIn">
             <AppIcon name="linkedin" :size="22" />
           </a>
-          <a href="#" aria-label="GitHub" class="social-link" title="GitHub">
+          <a href="https://github.com/Davids-star" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link" title="GitHub">
             <AppIcon name="github" :size="22" />
           </a>
         </aside>
@@ -414,7 +414,7 @@ onUnmounted(() => {
           <p>Estou sempre em busca de novos desafios e oportunidades.</p>
           <p>Se você tem uma ideia, um projeto ou apenas quer conversar sobre tecnologia, será um prazer falar com você.</p>
         </div>
-        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="contact-button">
+        <a href="https://wa.me/558898168970" target="_blank" rel="noopener noreferrer" class="contact-button">
           <AppIcon name="whatsapp" :size="20" />
           <span>Entrar em contato</span>
           <span aria-hidden="true" class="contact-arrow">→</span>
@@ -440,16 +440,16 @@ onUnmounted(() => {
 
         <!-- Links de redes sociais no rodapé -->
         <nav class="footer-socials" aria-label="Redes sociais do rodapé">
-          <a href="#" aria-label="WhatsApp" class="footer-social-link" title="WhatsApp">
+          <a href="https://wa.me/558898168970" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-link" title="WhatsApp">
             <AppIcon name="whatsapp" :size="18" />
           </a>
-          <a href="#" aria-label="Instagram" class="footer-social-link" title="Instagram">
+          <a href="https://www.instagram.com/fxz_davids?stkn=cjBrazY4aHZ5YTdo" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link" title="Instagram">
             <AppIcon name="instagram" :size="18" />
           </a>
-          <a href="#" aria-label="LinkedIn" class="footer-social-link" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/felipe-davids-0a3a223a3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link" title="LinkedIn">
             <AppIcon name="linkedin" :size="18" />
           </a>
-          <a href="#" aria-label="GitHub" class="footer-social-link" title="GitHub">
+          <a href="https://github.com/Davids-star" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link" title="GitHub">
             <AppIcon name="github" :size="18" />
           </a>
         </nav>
@@ -489,7 +489,7 @@ onUnmounted(() => {
   position: sticky;
   top: 14px;
   z-index: 1000;
-  width: min(100% - 32px, 714px);
+  width: min(100% - 32px, 600px);
   margin: 14px auto 0;
   padding: 8px 16px;
   border: 2px solid #e37d43;
