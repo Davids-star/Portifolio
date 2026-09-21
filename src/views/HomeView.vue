@@ -414,7 +414,7 @@ onUnmounted(() => {
           <p>Estou sempre em busca de novos desafios e oportunidades.</p>
           <p>Se você tem uma ideia, um projeto ou apenas quer conversar sobre tecnologia, será um prazer falar com você.</p>
         </div>
-        <a href="https://wa.me/558898168970" target="_blank" rel="noopener noreferrer" class="contact-button">
+        <a href="https://wa.me/5588981689700" target="_blank" rel="noopener noreferrer" class="contact-button">
           <AppIcon name="whatsapp" :size="20" />
           <span>Entrar em contato</span>
           <span aria-hidden="true" class="contact-arrow">→</span>
