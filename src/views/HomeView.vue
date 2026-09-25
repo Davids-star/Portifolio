@@ -344,14 +344,15 @@ onUnmounted(() => {
 
         <div class="featured-list">
           <!-- Projeto Destaque 1: Sistema de Gestão à vista -->
-          <router-link to="/503" class="featured-card">
+          <router-link to="/503" class="featured-card novus-card">
             <span class="external-link" aria-hidden="true">
               <AppIcon name="external-link" :size="18" />
             </span>
+            <h3>Projeto Inova Senai (Novus)</h3>
             <div class="project-image-placeholder project-image-01" aria-label="Espaço reservado para a imagem do projeto"></div>
-            <h3>Sistema de Gestão à vista</h3>
-            <p>Sistema industrial para empresas de pequeno porte com foco em otimização de processos e monitoramento em tempo
-              real.</p>
+            <h3>Score Flow</h3>
+            <p>Sistema industrial para micro e pequenas empresas com foco em otimização de processos e monitoramento em tempo
+              real. <span class="inline-link">Saber mais</span></p>
           </router-link>
 
           <!-- Projeto Destaque 2: Agenda de comissão -->
@@ -378,17 +379,48 @@ onUnmounted(() => {
 
       <!-- ================= SEÇÃO 5: EXPERIÊNCIAS DETALHADAS ================= -->
       <section id="faculdade" class="experience-list" aria-label="Experiências">
+        <section id="senai" class="senai-section" aria-labelledby="senai-title">
+          <div class="senai-header">
+            <span class="senai-badge">SENAI</span>
+          </div>
+          <div class="senai-content">
+            <h2 id="senai-title">O que eu faço no SENAI</h2>
+            <p>
+              No SENAI, foco em desenvolver soluções digitais que ajudem na organização de processos, otimização de fluxo de trabalho
+              e criação de interfaces funcionais para atender às necessidades reais do projeto.
+            </p>
+            <p>
+              Atualmente estou envolvido no projeto <strong>Inova Senai (Novus)</strong>, trabalhando para criar uma ferramenta
+              que melhore a gestão e a visualização de dados de forma prática e eficiente.
+            </p>
+          </div>
+        </section>
+
         <!-- Experiência 1: Faculdade -->
         <article class="experience-card experience-card-left">
           <span class="experience-number">01</span>
           <div>
-            <h2>Faculdade</h2>
+            <div class="experience-header-tag">
+              <span class="experience-badge">Faculdade</span>
+            </div>
             <p class="experience-label">Sistemas de informação</p>
             <p>
-              Sou estudante de Sistemas de Informação na UNINASSAU, em Juazeiro do Norte, com foco em desenvolvimento 
-              de software e criação de soluções digitais. A formação amplia minha visão sobre tecnologia, 
-              programação, bancos de dados e desenvolvimento de sistemas, conhecimentos que aplico diretamente 
-              nos projetos que desenvolvo.
+              Sempre me perguntei como uma ideia deixa de ser rascunho e passa a funcionar de verdade. Foi essa dúvida
+              que me levou a Sistemas de Informação, na UNINASSAU, em Juazeiro do Norte.
+            </p>
+            <p>
+              Na faculdade, programação e bancos de dados deixaram de ser assuntos soltos. Construo sistemas do zero e
+              vejo como cada peça se encaixa nas outras. O curso me ensinou a olhar para um problema como quem vai
+              resolvê-lo, e não só a escrever código para ele.
+            </p>
+            <p>
+              Só que sala de aula não basta. O que aprendo lá, eu levo para os meus projetos e testo. Erro, ajusto,
+              tento de novo, e cada falha me mostra o que ainda não sei. Quando volto aos estudos, volto com perguntas
+              que só apareceram porque eu tentei fazer.
+            </p>
+            <p>
+              É desse vai e vem entre estudar e construir que saem tanto as minhas habilidades técnicas quanto o tipo de
+              desenvolvedor que quero ser.
             </p>
           </div>
         </article>
@@ -1079,12 +1111,54 @@ onUnmounted(() => {
   background-repeat: no-repeat;
 }
 
+.novus-card {
+  border-color: rgba(0, 102, 204, 0.75);
+  background: linear-gradient(180deg, rgba(6, 29, 55, 0.96), rgba(5, 11, 18, 0.96));
+  box-shadow: 0 0 18px rgba(0, 97, 196, 0.16);
+}
+
+.novus-card .external-link {
+  background: rgba(0, 74, 148, 0.18);
+  color: #ff8d1f;
+}
+
+.novus-card h3,
+.novus-card .inline-link {
+  color: #ff8d1f;
+}
+
 .project-image-01 {
-  background-image: url('../Icon/gestao.png');
+  background-color: #0d1c2a;
+  background-image: url('../Icon/novus.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid rgba(0, 101, 196, 0.45);
+}
+
+.senai-card {
+  border-color: rgba(0, 102, 204, 0.75);
+  background: linear-gradient(180deg, rgba(7, 27, 48, 0.96), rgba(7, 7, 7, 0.96));
+  box-shadow: 0 0 18px rgba(0, 102, 204, 0.14);
+}
+
+.senai-card .external-link {
+  background: rgba(0, 86, 180, 0.18);
+  color: #ff8d1f;
+}
+
+.senai-card h3,
+.senai-card .inline-link {
+  color: #ff8d1f;
 }
 
 .project-image-02 {
-  background-image: url('../Icon/comisao.png');
+  background-color:  rgba(255, 101, 13, 0.15);
+  background-image: url('../Icon/favicon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .project-image-03 {
@@ -1125,6 +1199,57 @@ onUnmounted(() => {
   line-height: 1.35;
 }
 
+.inline-link {
+  display: inline;
+  color: #ff650d;
+  font-weight: 600;
+}
+
+.senai-section {
+  width: min(100%, 900px);
+  margin: 0 auto 18px;
+  padding: 22px 24px;
+  border: 1px solid rgba(0, 102, 204, 0.75);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(10, 34, 60, 0.96), rgba(12, 12, 12, 0.96));
+  box-shadow: 0 0 18px rgba(0, 102, 204, 0.12);
+  scroll-margin-top: 90px;
+}
+
+.senai-header {
+  margin-bottom: 14px;
+}
+
+.senai-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 141, 31, 0.8);
+  border-radius: 999px;
+  background: rgba(255, 141, 31, 0.08);
+  color: #ff8d1f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.senai-content h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.senai-content p {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.senai-content p:last-child {
+  margin-bottom: 0;
+}
+
 /* ==========================================================================
    8. SEÇÃO DE EXPERIÊNCIAS DETALHADAS (EXPERIENCE-LIST)
    ========================================================================== */
@@ -1160,6 +1285,23 @@ onUnmounted(() => {
   color: #ff650d;
   font-size: 22px;
   font-weight: 700;
+}
+
+.experience-header-tag {
+  margin-bottom: 8px;
+}
+
+.experience-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 141, 31, 0.8);
+  border-radius: 999px;
+  background: rgba(255, 141, 31, 0.08);
+  color: #ff8d1f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .experience-card h2 {
